@@ -1,0 +1,231 @@
+body
+{
+	background-color:white
+}
+* {
+    box-sizing: border-box;
+}
+
+
+/* unvisited link */
+a:link {
+    color: #3aa;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: #aa6;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the side navigation */
+.sidebar
+{
+    height: 100%;
+    width: 12%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: grey;
+	float:left;
+    overflow-x: hidden;
+}
+
+
+
+/* Side navigation links */
+.sidebar a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.sidebar a:hover {
+    background-color: #333;
+    color: silver;
+}
+
+
+
+/*heart of the webpage*/
+.heart{
+	margin-left:15%;
+	height: 100%;
+	width: 80%;
+}
+
+
+
+.header{
+	margin-top: 50pt;
+	height: 260pt;
+	width: auto;
+	background-color:silver;
+}
+
+#mainphoto
+{
+	width:100%;
+/*	max-height:240pt;*/
+	position: relative;
+	right:0;
+	height: 90%;
+	top: 0;
+	float: right;
+}
+
+.title{
+	margin-top:10pt;
+	margin-left: 10pt;
+	float:left;
+	max-width:50%;
+}
+
+.photo{
+	position: relative;
+	right:0;
+/*	height: 90%;*/
+	width:30%;
+	top: 0;
+	float: right;
+}
+
+/*Mini windows*/
+.mainbody{
+	heigth: 100%;
+	width: auto;
+	background-color:#ddd;
+}
+
+.cont{
+	/*height: auto;*/
+	min-height: 200pt;
+	border: 1px solid #444;
+	width: 75%;
+	padding-bottom:5pt;
+	padding-left:5pt;
+}
+
+
+.conttable:nth-child(even){
+	background-color: #f2f2f2;
+}
+
+.conttable{
+	border: 1px solid black;
+	margin:3pt;
+	width:60%;
+	font-weight:normal;
+	text-align:left;
+	padding-bottom: 3pt;
+	position: relative; 
+	/*background:orange;*/
+}
+
+#CV{
+	height:810pt;
+}
+
+.lastbox{
+	position:relative;
+	bottom:0pt;
+}
+
+/*Style of object tags*/
+
+#AboutMe{
+}
+
+#aboutmeimg{
+	max-width:75%;
+}
+
+#Contacts{
+}
+
+#contact{
+	background: url(../images/polytope.png) no-repeat;
+	background-size:100% 100%;
+	margin:auto;
+}
+
+#pinph{
+	height:12pt;
+}
+
+#phoph{
+	height:12pt;
+}
+
+#Research{
+}
+
+.seealso{
+	font-size:10px;
+	font-style:italics;
+	text-indent:10%;
+}
+
+#Talks{
+}
+
+.pastconf{
+	text-decoration:underline;
+	font-size:11px;
+}
+
+.currconf{
+}
+
+
+#Teaching{
+}
+
+
+#CV{
+}
+
+
+#Docs{
+	height:300pt;
+}
+
+/*Style the footer */
+#wrapper{
+	margin-left:0%;
+	width:100%;
+	height40pt;
+	border: 2px solid #222;
+	background-color:#ddd;
+	border-left: 10px;
+	margin-left: 0pt;
+	position:fixed;
+	bottom: 0;
+	z-index:2;
+}
+
+.footer{
+	position: relative;
+	background-color:#eee;
+}
+
+.footertext{
+	text-align:center;
+}
