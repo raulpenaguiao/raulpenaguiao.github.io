@@ -7,6 +7,19 @@ body
 }
 
 
+.cf:before,
+.cf:after {
+content: "";
+display: table;
+}
+.cf:after {
+clear: both;
+}
+.cf {
+clear: both;
+*zoom: 1;
+}
+
 /* unvisited link */
 a:link {
     color: #3aa;
@@ -79,7 +92,6 @@ body {
 
 .header{
 	margin-top: 50pt;
-	height: 260pt;
 	width: auto;
 	background-color:silver;
 }
@@ -143,9 +155,9 @@ body {
 	/*background:orange;*/
 }
 
-#CV{
+/*#CV{
 	height:810pt;
-}
+}*/
 
 .lastbox{
 	position:relative;
@@ -202,21 +214,7 @@ body {
 	font-size:11px;
 }
 
-.currconf{
-}
 
-
-#Teaching{
-}
-
-
-#CV{
-}
-
-
-#Docs{
-	height:700pt;
-}
 
 /*Style the footer */
 #wrapper{
