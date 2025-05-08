@@ -32,3 +32,13 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const overlay = document.getElementById("animation-overlay");
+
+    // Remove the overlay after the animation finishes
+    setTimeout(() => {
+        overlay.classList.add("fade-out");
+    }, 5000); // Match this duration with the animation length
+});
