@@ -88,9 +88,25 @@
 /* icons */
 
 .social-icon img {
-    width: 24px;
-    height: 24px;
+    height: 2.0rem;
+    width: 2.0rem;
     display: block;
     margin: 0 auto;
     transition: transform 0.3s ease;
+}
+
+
+/* article */
+
+.article {
+    border: 3px solid black; 
+    border-radius: 10px; 
+    padding: 10px; 
+    margin: 10px;
+    width: 20rem;
+}
+
+.img-fluid-article {
+    width: 18rem;
+    height: auto;
 }

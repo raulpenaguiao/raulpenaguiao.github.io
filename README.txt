@@ -29,3 +29,13 @@ How to get in touch with me.
 
 ---
 This website serves as a professional portfolio and academic resource. Feel free to explore the different sections to learn more about my work and research interests.
+
+
+# TODO
+
+Add the journal information on the tropical critical points paper in arxiv
+Add the journal information on the feasible region paper in arxiv
+Add the journal information on the pattern hopf algebras in arxiv
+Add the paper pdf to each publication
+Make the clicky stuff work
+Make the clicky stuff pretty

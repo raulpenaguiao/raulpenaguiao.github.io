@@ -140,6 +140,10 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: #343a40;
 }
 
+.course-newtitle {
+  margin-top: 1rem;
+}
+
 h1, .h1 {
   font-size: calc(1.725rem + 5.7vw);
 }
