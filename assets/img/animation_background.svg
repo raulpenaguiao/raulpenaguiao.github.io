@@ -2,16 +2,12 @@
 <svg viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
   <!-- Background is transparent by default -->
   
-  <!-- Title -->
-  <text x="400" y="30" font-family="Arial" font-size="20" text-anchor="middle" fill="#333">Mathematical Structures: Polytopes, Matroids, Graphs and Paths</text>
-  
   <!-- 3D Cube (Polytope) -->
   <g transform="translate(150, 150)">
     <polygon points="0,0 70,20 70,90 0,70" fill="rgba(173, 216, 230, 0.6)" stroke="#0066cc" stroke-width="2"/>
     <polygon points="0,0 50,-50 120,-30 70,20" fill="rgba(173, 216, 230, 0.6)" stroke="#0066cc" stroke-width="2"/>
     <polygon points="70,20 120,-30 120,40 70,90" fill="rgba(173, 216, 230, 0.6)" stroke="#0066cc" stroke-width="2"/>
-    <text x="60" y="45" font-family="Arial" font-size="12" text-anchor="middle" fill="#0066cc">Cube</text>
-    <text x="60" y="120" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Polytope</text>
+
   </g>
   
   <!-- Tetrahedron (Polytope) -->
@@ -24,7 +20,7 @@
     <line x1="30" y1="60" x2="60" y2="30" stroke="#cc3366" stroke-width="2"/>
     <line x1="-10" y1="-30" x2="-20" y2="50" stroke="#cc3366" stroke-width="2"/>
     <line x1="-10" y1="-30" x2="60" y2="30" stroke="#cc3366" stroke-width="2"/>
-    <text x="20" y="30" font-family="Arial" font-size="12" text-anchor="middle" fill="#cc3366">Tetrahedron</text>
+
   </g>
   
   <!-- Matroid Representation -->
@@ -44,7 +40,7 @@
     <line x1="40" y1="0" x2="60" y2="40" stroke="#2b542c" stroke-width="2"/>
     <line x1="80" y1="0" x2="60" y2="40" stroke="#2b542c" stroke-width="2"/>
     
-    <text x="40" y="60" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Matroid</text>
+
   </g>
   
   <!-- Graph with Paths -->
@@ -72,7 +68,7 @@
     <line x1="80" y1="20" x2="120" y2="90" stroke="#d9534f" stroke-width="4"/>
     <line x1="120" y1="90" x2="200" y2="60" stroke="#d9534f" stroke-width="4"/>
     
-    <text x="100" y="120" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Graph with Path</text>
+
   </g>
   
   <!-- Directed Graph with Path -->
@@ -109,7 +105,7 @@
     <line x1="135" y1="0" x2="165" y2="50" stroke="#d9534f" stroke-width="4"/>
     <polygon points="165,50 157,42 162,38" fill="#d9534f" stroke="#d9534f" stroke-width="1"/>
     
-    <text x="120" y="100" font-family="Arial" font-size="14" text-anchor="middle" fill="#333">Directed Graph with Path</text>
+
   </g>
   
   <!-- Connecting Lines between the Structures -->
@@ -117,16 +113,4 @@
   <path d="M200,400 C300,450 400,450 500,400" stroke="#999" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
   <path d="M150,250 C150,300 150,300 150,350" stroke="#999" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
   <path d="M600,250 C600,300 600,300 500,350" stroke="#999" stroke-width="1" stroke-dasharray="5,5" fill="none"/>
-  
-  <!-- Legend -->
-  <rect x="300" y="500" width="200" height="80" fill="rgba(240, 240, 240, 0.7)" stroke="#999" stroke-width="1" rx="5" ry="5"/>
-  <text x="400" y="520" font-family="Arial" font-size="16" text-anchor="middle" fill="#333">Legend</text>
-  <circle cx="320" cy="540" r="5" fill="#0066cc"/>
-  <text x="335" y="545" font-family="Arial" font-size="12" fill="#333">Polytopes</text>
-  <circle cx="320" cy="560" r="5" fill="#5cb85c"/>
-  <text x="335" y="565" font-family="Arial" font-size="12" fill="#333">Matroids</text>
-  <circle cx="390" cy="540" r="5" fill="#f0ad4e"/>
-  <text x="405" y="545" font-family="Arial" font-size="12" fill="#333">Graphs</text>
-  <line x1="380" y1="560" x2="400" y2="560" stroke="#d9534f" stroke-width="2"/>
-  <text x="415" y="565" font-family="Arial" font-size="12" fill="#333">Paths</text>
-</svg>
+  </svg>

@@ -34,11 +34,46 @@ window.addEventListener('DOMContentLoaded', event => {
 });
 
 
+// Function to load HTML content into a div
+function loadHTMLContent_subpages(pagename) {
+    const container = document.getElementById(pagename + "-content");
+    fetch("subpages/" + pagename + ".html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to load pagename.html");
+            }
+            return response.text();
+        })
+        .then(data => {
+            // Insert the fetched HTML into the container
+            container.innerHTML = data;
+        })
+        .catch(error => {
+            console.error("Error loading " + pagename + ":", error);
+            container.innerHTML = "<p>Failed to load " + pagename + " content.</p>";
+        });
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    loadHTMLContent_subpages("certifications");
+    loadHTMLContent_subpages("awards");
+    loadHTMLContent_subpages("about");
+    loadHTMLContent_subpages("experience");
+    loadHTMLContent_subpages("publications");
+    loadHTMLContent_subpages("projects");
+    loadHTMLContent_subpages("teaching");
+    loadHTMLContent_subpages("contacts");
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.getElementById("animation-overlay");
 
     // Remove the overlay after the animation finishes
     setTimeout(() => {
         overlay.classList.add("fade-out");
-    }, 5000); // Match this duration with the animation length
+    }, 10000); // Match this duration with the animation length
 });
+
+
+

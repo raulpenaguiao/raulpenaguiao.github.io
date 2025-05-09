@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="168" height="152" viewBox="0 0 168 152">
+<path fill-rule="evenodd" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 71 100 C 71 96 65 96 65 100 C 65 104 71 104 71 100 Z M 71 100 "/>
+<path fill-rule="evenodd" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 55 68 C 55 64 49 64 49 68 C 49 72 55 72 55 68 Z M 55 68 "/>
+<path fill-rule="evenodd" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 87 52 C 87 48 81 48 81 52 C 81 56 87 56 87 52 Z M 87 52 "/>
+<path fill-rule="evenodd" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 119 68 C 119 64 113 64 113 68 C 113 72 119 72 119 68 Z M 119 68 "/>
+<path fill-rule="evenodd" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 103 100 C 103 96 97 96 97 100 C 97 104 103 104 103 100 Z M 103 100 "/>
+<path fill-rule="evenodd" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 39 148 C 39 144 33 144 33 148 C 33 152 39 152 39 148 Z M 39 148 "/>
+<path fill-rule="evenodd" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 7 68 C 7 64 1 64 1 68 C 1 72 7 72 7 68 Z M 7 68 "/>
+<path fill-rule="evenodd" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 87 4 C 87 0 81 0 81 4 C 81 8 87 8 87 4 Z M 87 4 "/>
+<path fill-rule="evenodd" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 167 68 C 167 64 161 64 161 68 C 161 72 167 72 167 68 Z M 167 68 "/>
+<path fill-rule="evenodd" fill="rgb(0%, 0%, 0%)" fill-opacity="1" d="M 135 148 C 135 144 129 144 129 148 C 129 152 135 152 135 148 Z M 135 148 "/>
+<path fill="none" stroke-width="1.2" stroke-linecap="butt" stroke-linejoin="round" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 256 624 L 224 704 L 304 768 L 384 704 L 352 624 L 256 624 L 288 672 L 304 720 L 320 672 L 272 704 L 336 704 L 288 672 " transform="matrix(1, 0, 0, -1, -220, 772)"/>
+<path fill="none" stroke-width="1.2" stroke-linecap="butt" stroke-linejoin="round" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 352 624 L 320 672 " transform="matrix(1, 0, 0, -1, -220, 772)"/>
+<path fill="none" stroke-width="1.2" stroke-linecap="butt" stroke-linejoin="round" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 384 704 L 336 704 " transform="matrix(1, 0, 0, -1, -220, 772)"/>
+<path fill="none" stroke-width="1.2" stroke-linecap="butt" stroke-linejoin="round" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 224 704 L 272 704 " transform="matrix(1, 0, 0, -1, -220, 772)"/>
+<path fill="none" stroke-width="1.2" stroke-linecap="butt" stroke-linejoin="round" stroke="rgb(0%, 0%, 0%)" stroke-opacity="1" stroke-miterlimit="10" d="M 304 720 L 304 768 " transform="matrix(1, 0, 0, -1, -220, 772)"/>
+</svg>
