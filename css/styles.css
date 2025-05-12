@@ -389,7 +389,8 @@ select {
   text-transform: none;
 }
 
-[role=button] {
+[role=button],
+.article-clickable {
   cursor: pointer;
 }
 

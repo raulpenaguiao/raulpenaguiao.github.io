@@ -36,6 +36,8 @@ This website serves as a professional portfolio and academic resource. Feel free
 Add the journal information on the tropical critical points paper in arxiv
 Add the journal information on the feasible region paper in arxiv
 Add the journal information on the pattern hopf algebras in arxiv
-Add the paper pdf to each publication
-Make the clicky stuff work
-Make the clicky stuff pretty
+
+Make internal links work on github 
+Make the publications part of the website more pretty
+
+Dynamically add the publications to the website with build.py

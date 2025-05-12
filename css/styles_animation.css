@@ -101,12 +101,96 @@
 .article {
     border: 3px solid black; 
     border-radius: 10px; 
-    padding: 10px; 
-    margin: 10px;
-    width: 20rem;
+    margin: 10px 0px 10px 0px; /* top right bottom left */ 
+    padding: 10px;
+    width: 100%;
 }
 
 .img-fluid-article {
     width: 18rem;
     height: auto;
+}
+
+
+@media (min-width: 768px) {
+  .article {
+    width: 20rem;
+  }
+}
+@media (min-width: 992px) {
+  .article {
+    width: 20rem;
+  }
+}
+/* aspect ratio of hobbies should be 10:7 */
+.force-10-7-ar {
+    aspect-ratio: 10 / 7;
+}
+
+.center-h-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-block {
+    background-color: #94b4c1;
+    border-radius: 2.5rem;
+}
+
+.btn-border {
+    border: 2px solid black !important;
+    border-radius: 0.5rem !important;
+    padding: 0.5rem 1rem !important;
+    background-color: transparent !important;
+    color: black !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s !important;
+}
+
+.text-height {
+    height: 100%;
+}
+
+.list-nobullet {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-nobullet li {
+    margin: 1rem 0;
+}
+
+/* colors */
+.bronze {
+    color: rgb(205, 127, 50);
+}
+
+.silver {
+    color: rgb(192, 192, 192);
+}
+
+.gold {
+    color: rgb(255, 215, 0);
+}
+
+/* talks */
+li.talk-venue {
+    list-style-type: none;
+    border-radius: 8px;
+    text-align: right; margin: 5px 0;
+}
+
+.talk-venues {
+}
+
+.talk-name {
+  font-size: calc(1.325rem + 0.9vw);
+}
+@media (min-width: 1200px) {
+  .talk-name  {
+    font-size: 2rem;
+  }
 }
