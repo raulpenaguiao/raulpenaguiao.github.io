@@ -1,0 +1,97 @@
+{
+    "publications": [
+        {
+        "name": "DFRPD",
+        "title": "The dimension of the feasible region of pattern densities",
+        "other-authors": [{
+            "name": "Frederik Garbe",
+            "url": "https://web.ifi.uni-heidelberg.de/tcs/garbe"
+        }, {
+            "name": "Daniel Kral",
+            "url": "https://www.ucw.cz/~kral/index.html.en"
+        }, {
+            "name": "Alexandru Malekshahian",
+            "url": "https://www.kcl.ac.uk/people/alexandru-malekshahian"
+        }],
+        "date": "18 September, 2023",
+        "journal": "Math. Proc. Camb. Phil. Soc. 178 (2025) 1-14",
+        "journal-url": "https://www.cambridge.org/core/journals/mathematical-proceedings-of-the-cambridge-philosophical-society/article/abs/dimension-of-the-feasible-region-of-pattern-densities/8310529D821B227293D30D36184F5024",
+        "arxiv-url": "https://arxiv.org/abs/2309.10203"
+        },
+        {
+        "name": "DSV",
+        "title": "Discrete signature varieties",
+        "other-authors": [{
+            "name": "Carlo Bellingeri",
+            "url": "https://iecl.univ-lorraine.fr/membre-iecl/bellingeri-carlo-2/"
+        }],
+        "date": "23 March, 2023",
+        "arxiv-url": "https://arxiv.org/abs/2303.13377"
+        },
+        {
+        "name": "TCPAM",
+        "title": "The tropical critical points of an affine matroid",
+        "other-authors": [{
+            "name": "Federico Ardila-Mantilla",
+            "url": "https://fardila.com/"
+        }, {
+            "name": "Christopher Eur",
+            "url": "https://www.math.cmu.edu/~ceur/"
+        }],
+        "date": "15 December, 2022",
+        "journal": "SIAM Journal on Discrete Mathematics, 38(2), 1930-1942",
+        "journal-url": "https://epubs.siam.org/doi/abs/10.1137/23M1556174",
+        "arxiv-url": "https://arxiv.org/abs/2212.08173"
+        },
+        {
+        "name": "AFPHA",
+        "title": "Antipode formulas for pattern Hopf algebras",
+        "other-authors": [{
+            "name": "Yannic Vargas",
+            "url": "https://yannicmath.github.io/"
+        }],
+        "date": "27 October, 2022",
+        "arxiv-url": "https://arxiv.org/abs/2210.15778"
+        },
+        {
+        "name": "FRCPPAP",
+        "title": "The feasible regions for consecutive patterns of pattern-avoiding permutations",
+        "other-authors": [{
+            "name": "Jacopo Borga",
+            "url": "https://www.jacopoborga.com/"
+        }],
+        "date": "13 October 2020",
+        "journal": "Discrete Mathematics 346.2 (2023): 113219.",
+        "journal-url": "https://www.sciencedirect.com/science/article/pii/S0012365X22004253",
+        "arxiv-url": "https://arxiv.org/abs/2010.06273"
+        },
+        {
+        "name": "PHA",
+        "title": "Pattern Hopf algebras",
+        "date": "27 January 2020",
+        "journal": "Annals of Combinatorics 26.2 (2022): 405-451",
+        "journal-url": "https://link.springer.com/article/10.1007/s00026-022-00578-3",
+        "arxiv-url": "https://arxiv.org/abs/2001.09800"
+        },
+        {
+        "name": "FRCPPCP",
+        "title": "The feasible region for consecutive patterns of permutations is a cycle polytope",
+        "other-authors": [{
+            "name": "Jacopo Borga",
+            "url": "https://www.jacopoborga.com/"
+        }],
+        "date": "5 October 2019",
+        "journal": "Algebraic Combinatorics 3.6 (2020): 1259-1281",
+        "journal-url": "https://alco.centre-mersenne.org/item/ALCO_2020__3_6_1259_0/",
+        "arxiv-url": "https://arxiv.org/abs/1910.02233"
+        },
+        {
+        "name": "KCQFGHP",
+        "title": "The kernel of chromatic quasisymmetric functions on graphs and hypergraphic polytopes",
+        "date": "23 March 2018",
+        "journal": "Journal of Combinatorial Theory, Series A 175 (2020): 105258",
+        "journal-url": "https://www.sciencedirect.com/science/article/pii/S0097316520300509",
+        "arxiv-url": "https://arxiv.org/abs/1803.08824"
+        }
+    ]
+}

@@ -1,0 +1,328 @@
+{
+    "talks": [
+        {
+            "title": "The tropical critical points of an affine matroid",
+            "venues": [
+                {
+                    "name": "UKBB",
+                    "location": "Basel Switzerland",
+                    "date": "April 2024",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202404_UKBB_Bergman.pdf"
+                },
+                {
+                    "name": "FPSAC, Davis USA",
+                    "location": "Davis USA",
+                    "date": "July 2023",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202307_FPSAC_Bergman.pdf"
+                },
+                {
+                    "name": "SIAM AG",
+                    "location": "Eindhoven Netherlands",
+                    "date": "July 2023",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202307_SIAM_Bergman.pdf"
+                },
+                {
+                    "name": "Discrete Geometry and Topological Combinatorics Seminar",
+                    "location": "Berlin Germany",
+                    "date": "May 2023",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202305_FUBerlin_Bergman.pdf"
+                },
+                {
+                    "name": "MaTroCom",
+                    "location": "London UK",
+                    "date": "January 2023",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202301_QM_Bergman.pdf"
+                },
+                {
+                    "name": "Discrete Geometry and Combinatorics Seminar",
+                    "location": "Leipzig Germany",
+                    "date": "November 2022",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202212_MPI_Bergman.pdf"
+                }
+            ]
+        },
+        {
+            "title": "The discrete signature Veronese",
+            "venues": [
+                {
+                    "name": "Probabilistic methods, Signatures, Cubature and Geometry",
+                    "location": "York UK",
+                    "date": "January 2023",
+                    "slides-url": "assets/docs/Mathdocs/Slides/.pdf"
+                }
+            ]
+        },
+        {
+            "title": "A new cancellation-free formula for permutation patterns Hopf algebra",
+            "venues": [
+                {
+                    "name": "ACPMS",
+                    "location": "Online",
+                    "date": "August 2022",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202208_ACPMS_Cancellation.pdf"
+                },
+                {
+                    "name": "Summer school in algebraic combinatorics",
+                    "location": "Krakow Poland",
+                    "date": "July 2022",
+                    "poster-url": "assets/docs/Mathdocs/Posters/202207_SummerSchool_Krakow.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Pattern Hopf algebras in combinatorial presheaves",
+            "venues": [
+                {
+                    "name": "Rough Algebra Workshop",
+                    "location": "Berlin Germany",
+                    "date": "March, 2022",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202203_RoughAlgebra_patterns.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Using intersection of fans to construct more fans?",
+            "venues": [
+                {
+                    "name": "AGC Seminar SFSU",
+                    "location": "San Francisco USA",
+                    "date": "February 2022",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202202_SFSU_bergmanfanofmatroid.pdf"
+                }
+            ]
+        },
+        {
+            "title": "The Birkoff von Neumann polytope",
+            "venues": [
+                {
+                    "name": "Alternating sign matrices FU Berlin Seminar",
+                    "location": "FU Berlin",
+                    "date": "June 2021",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202106_FUBerlin_BirkoffVonNeumann.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Feasible regions on permutation patterns - with dimension results",
+            "venues": [
+                {
+                    "name": "Permutation Patterns 2021, Virtual Workshop",
+                    "location": "Online",
+                    "date": "June 2021",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202106_PermutationPattenrs_FeasibleDimension.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Matroids: the five ways to think about them",
+            "venues": [
+                {
+                    "name": "Villa Student Seminar",
+                    "location": "FU Berlin",
+                    "date": "April 2021",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202104_VillaStudentSeminar_matroids.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Feasible regions meet pattern avoidance. The awaited 3rd part on feasible regions",
+            "venues": [
+                {
+                    "name": "Algebra, Geometry, and Combinatorics Seminar SFSU",
+                    "location": "San Francisco USA",
+                    "date": "February 2021",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202102_SFSU_feasibleregion.pdf"
+                },
+                {
+                    "name": "UC Berkeley combinatorics seminar",
+                    "location": "Berkeley USA",
+                    "date": "March 2021",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202102_UCB_feasibleregion.pdf"
+                },
+                {
+                    "name": "Virtual 10th Combinatorics Days",
+                    "location": "Coimbra Portugal",
+                    "date": "November 2020",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202011_Coimbra_feasibleregion.pdf"
+                },
+                {
+                    "name": "University of Florida Combinatorics Seminar",
+                    "location": "Gainesville USA",
+                    "date": "November 2020",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202011_Gainesville_feasibleregion.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Another set composition Hopf algebra and a commutative diagram with polytopes",
+            "venues": [
+                {
+                    "name": "Hopf District seminar",
+                    "location": "Online",
+                    "date": "January 2021",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202101_HopfDistrict_setcomposition.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Yet another cancellation-free antipode formula - new and old methods",
+            "venues": [
+                {
+                    "name": "virtual conference",
+                    "location": "Online",
+                    "date": "August 2020",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202008_virtualconference.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Hopf algebras and combinatorics",
+            "venues": [
+                {
+                    "name": "UZH thesis defense",
+                    "location": "Zürich Switzerland",
+                    "date": "May 2020",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202005_UZH_thesis_defense.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Quantum probability and density matrices",
+            "venues": [
+                {
+                    "name": "Reading group on quantum computing",
+                    "location": "Online",
+                    "date": "May 2020",
+                    "slides-url": "assets/docs/Mathdocs/Slides/202005_ReadingGroup_QuantumComputing.pdf"
+                }
+            ]
+        },
+        {
+            "title": "The feasible region for consecutive occurrences of large permutations",
+            "venues": [
+                {
+                    "name": "Formal Power Series and Algebraic Combinatorics",
+                    "location": "Online",
+                    "date": "July 2020",
+                    "poster-url": "assets/docs/Mathdocs/Slides/202007_FormalPowerSeries_LargePermutations.pdf"
+                },
+                {
+                    "name": "CMUC seminar",
+                    "location": "Coimbra Portugal",
+                    "date": "January 2020"
+                },
+                {
+                    "name": "Séminaire Combinatoire et Théorie des Nombres ICJ",
+                    "location": "Lyon France",
+                    "date": "December 2019"
+                }
+            ]
+        },
+        {
+            "title": "Pattern Hopf algebras in combinatorial presheaves",
+            "venues": [
+                {
+                    "name": "Rencontre du GDR Renormalisation 2019",
+                    "location": "Calais France",
+                    "date": "October 2019",
+                    "slides-url": "assets/docs/Mathdocs/Slides/201910_RencontreGDR_patterns.pdf"
+                },
+                {
+                    "name": "Permutation Patterns 2019",
+                    "location": "Zürich Switzerland",
+                    "date": "June 2019",
+                    "slides-url": "assets/docs/Mathdocs/Slides/201906_PermutationPatterns_patterns.pdf"
+                },
+                {
+                    "name": "82nd Séminaire Lotharingien de Combinatoire",
+                    "location": "Curia Portugal",
+                    "date": "April 2019",
+                    "slides-url": "assets/docs/Mathdocs/Slides/201904_SLC_patterns.pdf"
+                },
+                {
+                    "name": "Zurich Graduate Seminar",
+                    "location": "Zurich Switzerland",
+                    "date": "November 2019",
+                    "slides-url": "assets/docs/Mathdocs/Slides/201911_ZurichGraduateSeminar_patterns.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Chromatic symmetric functions on graphs and nestohedra",
+            "venues": [
+                {
+                    "name": "Formal Power Series and Algebraic Combinatorics",
+                    "location": "Dartmouth USA",
+                    "date": "July 2018",
+                    "slides-url": "assets/docs/Mathdocs/Slides/201807_FPSAC_ChromaticSymmetricFunctions.pdf"
+                },
+                {
+                    "name": "CMUC seminar",
+                    "location": "Coimbra Portugal",
+                    "date": "June 2018",
+                    "slides-url": "assets/docs/Mathdocs/Slides/201806_Coimbra_ChromaticSymmetricFunctions.pdf"
+                },
+                {
+                    "name": "8th Combinatorics day",
+                    "location": "Porto Portugal",
+                    "date": "June 2018",
+                    "slides-url": "assets/docs/Mathdocs/Slides/201806_UP_ChromaticSymmetricFunctions.pdf"
+                },
+                {
+                    "name": "80th Séminaire Lotharingien de Combinatoire",
+                    "location": "Lyon France",
+                    "date": "March 2018",
+                    "slides-url": "assets/docs/Mathdocs/Slides/201803_SLC_ChromaticSymmetricFunctions.pdf"
+                },
+                {
+                    "name": "Discrete mathematics seminar",
+                    "location": "Zurich Switzerland",
+                    "date": "December 2017",
+                    "slides-url": "assets/docs/Mathdocs/Slides/201712_DiscreteMathematicsSeminar_ChromaticSymmetricFunctions.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Coefficients of a random invariant in random graphs",
+            "venues": [
+                {
+                    "name": "Discrete mathematics seminar",
+                    "location": "Zurich Switzerland",
+                    "date": "September 2016",
+                    "slides-url": "assets/docs/Mathdocs/Slides/201609_DiscreteMathematicsSeminar_RandomGraphs.pdf"
+                }
+            ]
+        },
+        {
+            "title": "Flips in triangulations",
+            "venues": [
+                {
+                    "name": "Geometry - Combinatorics and Algorithms from ETH Zürich",
+                    "location": "Zurich Switzerland",
+                    "date": "May 2015"
+                }
+            ]
+        },
+        {
+            "title": "Non-repetitive sequences in paths and graphs",
+            "venues": [
+                {
+                    "name": "Mittagseminar from ETH Zürich",
+                    "location": "Zurich Switzerland",
+                    "date": "May 2015"
+                }
+            ]
+        },
+        {
+            "title": "Quandle Structures On Knots",
+            "venues": [
+                {
+                    "name": "Diagonal School",
+                    "location": "Universidade Nova de Lisboa",
+                    "date": "February 2014",
+                    "slides-url": "assets/docs/Mathdocs/Slides/201402_DiagonalSchool_QuandleStructuresOnKnots.pdf"
+                }
+            ]
+        }
+    ]
+}

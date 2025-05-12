@@ -1,0 +1,79 @@
+{
+    "hobbies": [
+        {
+            "name": "Fort exploration",
+            "file_name": "fort_exploration.jpg",
+            "description": "The Forte de Nossa Senhora da Graça has been underexplored for a long time, but recently there has been a great push to have a meaningful exploration experience in the fort. This picture is from 2014, when it was mostly in shambles and disregarded."
+        },
+        {
+            "name": "Foto no alentejo",
+            "file_name": "alentejo.jpg",
+            "description": "Exploring the beautiful landscapes of the Alentejo region. Alentejo is known for is arid climate, paleolitic rock formations, good food, and the beautiful beaches of the Atlantic coast."
+        },
+        {
+            "name": "Getting vaccinated",
+            "file_name": "covid_vaccine.jpg",
+            "description": "In 2020 the world was upended with a pandemic. It took a while, but in 2021 I was able to get vaccinated. This picture is from the day I got my first dose of the vaccine."
+        },
+        {
+            "name": "Selfie in Split",
+            "file_name": "croatia_selfie.jpg",
+            "description": "A selfie taken in Split, Croatia."
+        },
+        {
+            "name": "Photo in SF",
+            "file_name": "embarcadero.jpg",
+            "description": "Exploring the downtown landscapes of San Francisco, including the iconic Embarcadero, with Jacopo."
+        },
+        {
+            "name": "Photo in Geres",
+            "file_name": "geres.jpg",
+            "description": "A long time ago when I used to go camping in Portugal. In one of the rare occasions that I brought the guitar with me, we had the opportunity to sing together."
+        },
+        {
+            "name": "Jungle speed",
+            "file_name": "jungle_speed.jpeg",
+            "description": "A fast-paced card game that tests your reflexes and speed. Socializing with friends and family while playing this game is always a blast."
+        },
+        {
+            "name": "Hiking around Kandersteg",
+            "file_name": "kandersteg_hike.jpg",
+            "description": "Exploring the beautiful landscapes of the Kandersteg region."
+        },
+        {
+            "name": "Using games to learn",
+            "file_name": "learning_games.jpg",
+            "description": "Using games to learn about logic and problem-solving. This picture is from part of a game that I developed for kids, using pentaminoes as a learning tool."
+        },
+        {
+            "name": "Mauerpark in Berlin",
+            "file_name": "mauerpark_berlin.jpg",
+            "description": "During my stay in Berlin, I was fortunate enough to experience the vibrant culture and history of the city."
+        },
+        {
+            "name": "Fantastic trees in Muir woods",
+            "file_name": "muir_woods.jpg",
+            "description": "The clearest way into the Universe is through a forest wilderness. - John Muir"
+        },
+        {
+            "name": "Coastal Sintra town",
+            "file_name": "praiamacas.jpg",
+            "description": "This is where I come from, where I grew up. It looks idyllic, and it is, but the problem with living far away from everything is to get there to somewhere."
+        },
+        {
+            "name": "Concert from Santana and Earth Wind and Fire",
+            "file_name": "santana_ewf_concert.jpg",
+            "description": "In 2022 Santana made a comeback tour with Earth Wind and Fire."
+        },
+        {
+            "name": "Beach in Portugal",
+            "file_name": "smartinhoporto.jpg",
+            "description": "Exploring the beautiful beaches of the Atlantic coast."
+        },
+        {
+            "name": "Painting a wall",
+            "file_name": "wallpainting.jpg",
+            "description": "Social life is underappreciated in the upbringing of any child. I was fortunate enough to have a great group of friends that I could count on. This picture is from a time when we were painting a wall in Carcavelos."
+        }
+    ]
+}
