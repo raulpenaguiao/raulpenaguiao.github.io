@@ -41,3 +41,6 @@ Make internal links work on github
 Make the publications part of the website more pretty
 
 Dynamically add the publications to the website with build.py
+
+Make pictures vectorized so they are not so pixelated
+Project pictures should be in a nice format, centered, maybe fill, something like that
