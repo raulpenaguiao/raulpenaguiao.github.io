@@ -1,0 +1,41 @@
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 !important;
+}
+.choice-container {
+    display: flex;
+    gap: 3rem;
+}
+.choice-box {
+    width: 220px;
+    height: 220px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid #e0e0e0;
+}
+.choice-box:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    border-color: #007bff;
+}
+.choice-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+.choice-label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+}
