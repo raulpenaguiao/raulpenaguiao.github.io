@@ -21,24 +21,45 @@
         <!-- Font Awesome for icons -->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body style="background-color: #FFF8E7;">
         <div class="choice-container">
-            <div class="choice-box" onclick="(function(e) { 
+            <div class="choice-box" style="background-color: #e7e7ff;" onclick="(function(e) { 
                 this.style.opacity = '0'; 
-                this.style.transition = 'opacity 0.5s'; 
-                setTimeout(() => window.location.href='index_academia.html', 500); 
+                this.style.transition = 'opacity 0.25s'; 
+                setTimeout(() => { 
+                    this.style.opacity = '1';
+                    this.style.transition = 'opacity 0.25s'; 
+                }, 300);
+                setTimeout(() => { window.location.href='index_academia.html'}, 600); 
             }).call(this)">
                 <span class="choice-icon"><i class="fas fa-university"></i></span>
                 <span class="choice-label">Academia</span>
             </div>
-            <div class="choice-box" onclick="(function(e) { 
+            <div class="choice-box" style="background-color: #e7e7ff;" onclick="(function(e) { 
                 this.style.opacity = '0'; 
-                this.style.transition = 'opacity 0.5s'; 
-                setTimeout(() => window.location.href='index_industry.html', 500); 
+                this.style.transition = 'opacity 0.25s'; 
+                setTimeout(() => { 
+                    this.style.opacity = '1';
+                    this.style.transition = 'opacity 0.25s'; 
+                }, 300);
+                setTimeout(() => {window.location.href='index_industry.html'}, 600); 
             }).call(this)">
                 <span class="choice-icon"><i class="fas fa-industry"></i></span>
                 <span class="choice-label">Industry</span>
             </div>
         </div>
+        <style>
+        .choice-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+        }
+        @media (max-width: 1000px) {
+            .choice-container {
+                flex-direction: column;
+            }
+        }
+        </style>
     </body>
 </html>
