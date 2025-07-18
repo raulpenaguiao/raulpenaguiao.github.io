@@ -209,7 +209,7 @@ function createInnerHTMLPublication(pub) {
     
     //clicky image
     on_click_string = "window.open('https://raulpenaguiao.github.io/assets/docs/pub/" + pub["name"] + ".pdf', '_blank')";
-    image_toclick = wrapElement("img", "src='https://raulpenaguiao.github.io/assets/img/pub/" + pub["name"] + ".png' alt='Publication Figure' class='img-fluid-article'", "");
+    image_toclick = wrapElement("img", "src='https://raulpenaguiao.github.io/assets/img/pub/" + pub["name"] + ".svg' alt='Publication Figure' class='img-fluid-article'", "");
     click_image = wrapElement("div", "class='article article-clickable' onclick=" + '"' + on_click_string + '"', image_toclick);
     content += click_image + "\n";
 
