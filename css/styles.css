@@ -511,10 +511,6 @@ progress {
   vertical-align: baseline;
 }
 
-.hidden {
-  display: none !important;
-}
-
 [hidden] {
   display: none !important;
 }
