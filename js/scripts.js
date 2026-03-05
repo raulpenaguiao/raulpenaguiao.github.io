@@ -7,6 +7,22 @@
 // Scripts
 // 
 
+//#region academia/industry mode toggle
+document.addEventListener('DOMContentLoaded', function () {
+    const toggle = document.getElementById('modeToggle');
+    if (!toggle) return;
+
+    const saved = localStorage.getItem('siteMode') || 'academia';
+    document.body.classList.add(saved + '-mode');
+    toggle.checked = (saved === 'industry');
+
+    toggle.addEventListener('change', function () {
+        localStorage.setItem('siteMode', this.checked ? 'industry' : 'academia');
+        window.location.href = window.location.pathname;
+    });
+});
+//#endregion
+
 //#region navbar
 window.addEventListener('DOMContentLoaded', event => {
     // Activate Bootstrap scrollspy on the main nav element

@@ -30,6 +30,12 @@ How to get in touch with me.
 ---
 This website serves as a professional portfolio and academic resource. Feel free to explore the different sections to learn more about my work and research interests.
 
+# Test
+To test the website locally, run the following command in a terminal:
+```bash
+python -m http.server 8001
+```
+Then open a web browser and navigate to `http://localhost:8001` to view the website.
 
 # TODO
 
@@ -37,5 +43,4 @@ Add the journal information on the tropical critical points paper in arxiv
 Add the journal information on the feasible region paper in arxiv
 Add the journal information on the pattern hopf algebras in arxiv
 
-Make internal links work on github 
-Hobby carousel pictures do not work
+
