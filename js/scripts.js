@@ -36,11 +36,23 @@ window.addEventListener('DOMContentLoaded', event => {
 //#region animation
 document.addEventListener("DOMContentLoaded", function () {
     const overlay = document.getElementById("animation-overlay");
+    const animSection = document.getElementById("animation");
+    if (!overlay) return;
 
     // Remove the overlay after the animation finishes
-    setTimeout(() => {
-        overlay.classList.add("fade-out");
-    }, 10000); // Match this duration with the animation length
+    const fadeOut = () => overlay.classList.add("fade-out");
+    setTimeout(fadeOut, 10000);
+
+    // Also dismiss immediately when user scrolls away from the animation section
+    if (animSection) {
+        const observer = new IntersectionObserver((entries) => {
+            if (!entries[0].isIntersecting) {
+                fadeOut();
+                observer.disconnect();
+            }
+        }, { threshold: 0.1 });
+        observer.observe(animSection);
+    }
 });
 
 //#endregion
@@ -134,15 +146,14 @@ function addHobbies()
     fetch('assets/hobbies.json')
         .then(response => response.json())
         .then(data => {
-            counter = 1;
-            data["hobbies"].forEach(hobby => {
-                // Loop body will go here in next steps
-                containerIndicators.innerHTML += createIndicatorsHTMLHobby(counter);
-                containerInner.innerHTML += createInnerHTMLHobby(hobby);
-                counter++;
+            let indicatorsHtml = '';
+            let innerHtml = '';
+            data["hobbies"].forEach((hobby, i) => {
+                indicatorsHtml += createIndicatorsHTMLHobby(i);
+                innerHtml += createInnerHTMLHobby(hobby);
             });
-        })
-        .then(() => {
+            containerIndicators.innerHTML = indicatorsHtml;
+            containerInner.innerHTML = innerHtml;
             containerIndicators.firstElementChild.classList.add('active');
             containerInner.firstElementChild.classList.add('active');
         })
@@ -158,72 +169,69 @@ function createIndicatorsHTMLHobby(counter) {
 }
 
 function createInnerHTMLHobby(hobby) {
-    imgElement = wrapElement("img", "src='https://raulpenaguiao.github.io/assets/img/hobbies/" + hobby["file_name"] + "' alt='" + hobby["name"] + "' class='h-100 center-h-div'", "");
-    descElement = wrapElement("div", "class='carousel-caption d-none text-block d-md-block'", wrapElement("p", "", hobby["description"]));
-    return wrapElement("div", "class='carousel-item force-10-7-ar'", imgElement + descElement);
+    const imgUrl = "https://raulpenaguiao.github.io/assets/img/hobbies/" + hobby["file_name"];
+    const bgElement = wrapElement("div", "class='carousel-bg' style=\"background-image: url('" + imgUrl + "')\"", "");
+    const imgElement = wrapElement("img", "src='" + imgUrl + "' alt='" + hobby["name"] + "' class='carousel-main-img'", "");
+    const descElement = wrapElement("div", "class='carousel-caption d-none text-block d-md-block'", wrapElement("p", "", hobby["description"]));
+    return wrapElement("div", "class='carousel-item force-10-7-ar'", bgElement + imgElement + descElement);
 }
 //#endregion
 
 //#region Publications
 function createInnerHTMLPublication(pub) {
-    //title
-    content = "";
-    title = wrapElement("h3", "class='mb-0'", pub["title"]);
-    if( pub["journal-url"] ) {
-        content += wrapElement("a", "href='" + pub["journal-url"] + "'", title) + "\n";
-    } else {
-        content += title + "\n";
+    // top accent stripe
+    let card = wrapElement("div", "class='pub-card-accent'", "");
+
+    // equation image area
+    const imgSrc = "https://raulpenaguiao.github.io/assets/img/pub/" + pub["name"] + ".svg";
+    const onClickPDF = "window.open('https://raulpenaguiao.github.io/assets/docs/pub/" + pub["name"] + ".pdf', '_blank')";
+    const img = wrapElement("img", "src='" + imgSrc + "' alt='Publication Figure'", "");
+    card += wrapElement("div", "class='pub-card-img' onclick=\"" + onClickPDF + "\"", img);
+
+    // body
+    let body = "";
+
+    // title
+    let titleText = pub["title"];
+    if (pub["journal-url"]) {
+        titleText = wrapElement("a", "href='" + pub["journal-url"] + "' target='_blank'", titleText);
+    }
+    body += wrapElement("div", "class='pub-card-title'", titleText);
+
+    // authors
+    if (pub["other-authors"] && pub["other-authors"].length > 0) {
+        let authorsText = "with ";
+        pub["other-authors"].forEach((author, i) => {
+            const name = author["url"]
+                ? wrapElement("a", "href='" + author["url"] + "' target='_blank'", author["name"])
+                : author["name"];
+            authorsText += name + (i < pub["other-authors"].length - 1 ? ", " : "");
+        });
+        body += wrapElement("div", "class='pub-card-authors'", authorsText);
     }
 
-    //authors
-    if( pub["other-authors"] && pub["other-authors"].length > 0){
-        coauthors = "with ";
-        for (let i = 0; i < pub["other-authors"].length; i++) {
-            authorName = pub["other-authors"][i]["name"];
-            if (pub["other-authors"][i]["url"]) {
-                coauthors += wrapElement("a", "href='" + pub["other-authors"][i]["url"] + "'", authorName) + ", ";
-            } else {
-                coauthors += authorName + ", ";
-            }
-        }
-        // Remove the last comma and space
-        coauthors = wrapElement("div", 'class="subheading mb-3"', coauthors.slice(0, -2));
-        content += coauthors + "\n";
+    // journal
+    if (pub["journal"]) {
+        body += wrapElement("div", "class='pub-card-journal'", pub["journal"]);
     }
 
-    //journal
-    if( pub["journal"]){
-        journal = wrapElement("div", '', pub["journal"]);
-        content += journal + "\n";
+    // links row
+    let links = "";
+    if (pub["arxiv-url"]) {
+        links += wrapElement("a", "class='pub-card-link' href='" + pub["arxiv-url"] + "' target='_blank'", "arXiv");
     }
+    links += wrapElement("a", "class='pub-card-link' href='javascript:void(0)' onclick=\"" + onClickPDF + "\"", "PDF");
+    body += wrapElement("div", "class='pub-card-links'", links);
 
-    //date
-    if( pub["date"]){
-        date = wrapElement("p", '', "Published on " + pub["date"]);
-        if ( pub["arxiv-url"] ) {
-            date = wrapElement("a", "href='" + pub["arxiv-url"] + "'", date);
-        }
-        content += date + "\n";
-    }
-    content = wrapElement("div", "class='flex-grow-1'", content); 
-    
-    //clicky image
-    on_click_string = "window.open('https://raulpenaguiao.github.io/assets/docs/pub/" + pub["name"] + ".pdf', '_blank')";
-    image_toclick = wrapElement("img", "src='https://raulpenaguiao.github.io/assets/img/pub/" + pub["name"] + ".svg' alt='Publication Figure' class='img-fluid-article'", "");
-    click_image = wrapElement("div", "class='article article-clickable' onclick=" + '"' + on_click_string + '"', image_toclick);
-    content += click_image + "\n";
-
-    //wrap up
-    answer = wrapElement("div", 'class="d-flex flex-column flex-md-row justify-content-between mb-5"', content);
-    return answer;
+    card += wrapElement("div", "class='pub-card-body'", body);
+    return wrapElement("div", "class='pub-card'", card);
 }
 function addPublications(){
-    const container = document.getElementById("publications-list");
+    const container = document.getElementById("publications-grid");
     fetch('assets/publications.json')
         .then(response => response.json())
         .then(data => {
             data["publications"].forEach(pub => {
-                // Loop body will go here in next steps
                 container.innerHTML += createInnerHTMLPublication(pub);
             });
         })

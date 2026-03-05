@@ -125,12 +125,53 @@
 /* aspect ratio of hobbies should be 10:7 */
 .force-10-7-ar {
     aspect-ratio: 10 / 7;
+    position: relative;
+    overflow: hidden;
 }
 
 .center-h-div{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* carousel blurred background fill */
+.carousel-bg {
+    position: absolute;
+    inset: -10%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(18px) brightness(0.6);
+    z-index: 0;
+}
+
+.carousel-main-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+
+.carousel-caption {
+    z-index: 2;
+}
+
+/* carousel arrow buttons with visible background */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 3rem;
+    z-index: 2;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.4rem;
+    background-size: 60%;
 }
 
 .text-block {
@@ -174,6 +215,188 @@
 
 .gold {
     color: rgb(255, 215, 0);
+}
+
+/* project grid */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1400px) {
+    .project-grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #333;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    text-decoration: none !important;
+    color: inherit !important;
+    background: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+    color: inherit !important;
+}
+
+.project-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    font-size: 2.8rem;
+    color: white;
+}
+
+.project-card-body {
+    padding: 0.6rem 0.75rem 0.75rem;
+    flex: 1;
+}
+
+.project-card-title {
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+    color: #222;
+}
+
+.project-card-desc {
+    font-size: 0.75rem;
+    color: #555;
+    line-height: 1.35;
+}
+
+/* publication card grid */
+.pub-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .pub-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1400px) {
+    .pub-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.pub-card {
+    display: flex;
+    flex-direction: column;
+    border: 1.5px solid #ddd;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pub-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.pub-card-accent {
+    height: 5px;
+    background: #bd5d38;
+    flex-shrink: 0;
+}
+
+.pub-card-img {
+    background: #fff5ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 150px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.pub-card-img img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.pub-card-body {
+    padding: 0.75rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.pub-card-title {
+    font-weight: bold;
+    font-size: 0.85rem;
+    color: #222;
+    line-height: 1.35;
+}
+
+.pub-card-title a {
+    color: #222;
+    text-decoration: none;
+}
+
+.pub-card-title a:hover {
+    color: #bd5d38;
+    text-decoration: underline;
+}
+
+.pub-card-authors {
+    font-size: 0.75rem;
+    color: #555;
+}
+
+.pub-card-journal {
+    font-size: 0.75rem;
+    color: #777;
+    font-style: italic;
+}
+
+.pub-card-links {
+    display: flex;
+    gap: 0.4rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.pub-card-link {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+    border: 1px solid #bd5d38;
+    border-radius: 0.25rem;
+    color: #bd5d38;
+    text-decoration: none !important;
+    transition: background 0.2s, color 0.2s;
+}
+
+.pub-card-link:hover {
+    background: #bd5d38;
+    color: white !important;
 }
 
 /* talks */
