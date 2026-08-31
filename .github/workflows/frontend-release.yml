@@ -1,0 +1,82 @@
+name: Frontend Release Deploy
+
+# Deploys the static site to the VPS whenever a tag whose name starts with
+# "frontendrelease" is pushed. Create such a tag with ./frontendrelease.sh
+#
+# Required repository secrets (Settings -> Secrets and variables -> Actions):
+#   VPS_IP       Public IP (or hostname) of the VPS
+#   VPS_USER     SSH login user on the VPS (e.g. ubuntu)
+#   VPS_SSH_KEY  Private SSH key (PEM, full contents) whose public key is in
+#                that user's ~/.ssh/authorized_keys on the VPS
+#
+# The target directory on the VPS is:
+#   /var/webserver/personalwebpage/raulpenaguiao.github.io
+# If it is not already a git checkout, this job creates it and clones the repo.
+# First-time bootstrap of a directory under /var/webserver that the VPS_USER
+# cannot already write needs passwordless sudo for that user (or pre-create
+# /var/webserver/personalwebpage owned by VPS_USER). Once the checkout exists,
+# no sudo is used.
+
+on:
+  push:
+    tags:
+      - 'frontendrelease*'
+
+concurrency:
+  group: frontend-release-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H "${{ secrets.VPS_IP }}" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Deploy tag to VPS
+        env:
+          DEPLOY_TAG: ${{ github.ref_name }}
+          VPS_USER: ${{ secrets.VPS_USER }}
+          VPS_IP: ${{ secrets.VPS_IP }}
+        run: |
+          ssh -i ~/.ssh/deploy_key \
+            -o IdentitiesOnly=yes \
+            -o StrictHostKeyChecking=yes \
+            "${VPS_USER}@${VPS_IP}" \
+            'bash -s' -- "$DEPLOY_TAG" <<'REMOTE'
+          set -euo pipefail
+
+          DEPLOY_TAG="$1"
+          DEPLOY_DIR="/var/webserver/personalwebpage/raulpenaguiao.github.io"
+          PARENT_DIR="$(dirname "$DEPLOY_DIR")"
+          REPO_URL="https://github.com/raulpenaguiao/raulpenaguiao.github.io.git"
+
+          if [ -z "$DEPLOY_TAG" ]; then
+            echo "No deploy tag received" >&2
+            exit 1
+          fi
+
+          if [ ! -d "$DEPLOY_DIR/.git" ]; then
+            echo "No checkout at $DEPLOY_DIR - bootstrapping"
+            if [ ! -d "$PARENT_DIR" ] || [ ! -w "$PARENT_DIR" ]; then
+              sudo mkdir -p "$PARENT_DIR"
+              sudo chown -R "$(id -un):$(id -gn)" "$PARENT_DIR"
+            fi
+            rm -rf "$DEPLOY_DIR"
+            git clone "$REPO_URL" "$DEPLOY_DIR"
+          fi
+
+          cd "$DEPLOY_DIR"
+          git remote set-url origin "$REPO_URL"
+          echo "Fetching tags"
+          git fetch --prune --force --tags origin
+          echo "Checking out $DEPLOY_TAG"
+          git checkout -f "$DEPLOY_TAG"
+          git reset --hard "$DEPLOY_TAG"
+          git clean -fd
+          echo "Deployed $DEPLOY_TAG ($(git rev-parse --short HEAD)) to $DEPLOY_DIR"
+          REMOTE
